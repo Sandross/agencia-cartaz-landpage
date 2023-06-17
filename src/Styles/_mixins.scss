@@ -1,0 +1,22 @@
+
+$--default-br: 14px;
+
+@mixin flexAlignment($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction !important;
+  justify-content: $justify !important;
+  align-items: $align !important;
+}
+
+@mixin size($wid: 100%, $heig: 100%) {
+  width: $wid;
+  height: $heig;
+}
+
+@mixin newPage() {
+  @include flexAlignment(column, flex-start, flex-start);
+  @include size(100%, fit-content);
+  min-width: 100%;
+  min-height: calc(100vh - 235px);
+  padding: 8px 8px 0 8px;
+}
