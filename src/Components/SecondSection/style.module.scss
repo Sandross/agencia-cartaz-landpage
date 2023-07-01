@@ -1,0 +1,26 @@
+@import '../../Styles/mixins';
+
+
+.s-container {
+  @include size(100%, 130vh);
+  background-image: url('../../Assets/wrapper2.png');
+  object-fit: contain;
+  background-repeat: round;
+
+  @media(max-width: 1920px) {
+    background-repeat: space;
+    @include size(100%, 100vh);
+  }
+
+  @media(max-width: 1400px) {
+    @include size(100%, 115vh);
+    background-image: url('../../Assets/wrapper2note.png');
+  }
+
+  @media(max-width: 1600px) {
+    @include size(100%, fit-content);
+    min-height: 115vh;
+    background-image: url('../../Assets/wrapper2mac.png');
+  }
+
+}

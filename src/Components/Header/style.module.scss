@@ -1,7 +1,7 @@
 @import '../../Styles/mixins';
 @import '../../Styles/colors';
 
-.h-container{
+.h-container {
   @include size(100%, 15vh);
   @include flexAlignment;
   backdrop-filter: blur(16px) saturate(200%);
@@ -9,38 +9,58 @@
   background-color: rgba(0, 0, 0, 0.40);
   border: 1px solid rgba(255, 255, 255, 0.125);
   position: fixed;
-  padding: 0 150px;
-  @media(max-width:  1400px){
+  padding: 0 80px;
+
+  @media(max-width: 1400px) {
     padding: 0 100px;
   }
-  .h-container__line{
+
+  .h-container__line {
     @include size;
     @include flexAlignment(row, flex-start);
-    .h-container__line-nav{
+    letter-spacing: 0.7px;
+
+    .h-container__line-nav {
       @include size(40%);
       @include flexAlignment(row, flex-start);
       gap: 15%;
-      @media(max-width: 1400px){
+
+      @media(max-width: 1400px) {
         gap: 5%;
       }
-      @media(max-width: 1920px){
+
+      @media(max-width: 1920px) {
         gap: 10%;
       }
     }
-    .h-container__line-img{
+
+    .h-container__line-img {
       @include size(20%, 100%);
       @include flexAlignment(row, center);
-      img{
+
+      img {
         @include size(330px, fit-content);
         max-height: 100%;
-        @media (max-width: 1400px){
+
+        @media (max-width: 1400px) {
           @include size(220px, fit-content);
         }
       }
     }
+
+    .h-container__line-icons {
+      @include size(40%, 100%);
+      @include flexAlignment(row, flex-end);
+      gap: 15px;
+
+      img {
+        @include size(25px, 25px)
+      }
+    }
   }
-  a{
+
+  a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

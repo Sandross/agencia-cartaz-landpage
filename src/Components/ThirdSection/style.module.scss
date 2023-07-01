@@ -1,0 +1,6 @@
+@import '../../Styles/mixins';
+
+.t-container {
+  @include size(100vw, 100vh);
+  background-color: #1e1e1e;
+}

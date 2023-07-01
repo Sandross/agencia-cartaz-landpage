@@ -1,6 +1,5 @@
 import style from './style.module.scss';
 
-
 const Layout = ({ children }) => {
   return (
     <div className={style['app-layout']}>

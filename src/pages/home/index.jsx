@@ -1,12 +1,16 @@
-import Home from "../../Components/HomePage"
+import FirstSection from "../../Components/FirstSection"
+import SecondSection from "../../Components/SecondSection";
+import ThirdSection from "../../Components/ThirdSection";
 import styles from './style.module.scss';
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div className={styles['h-container']}>
-      <Home />
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
     </div>
   )
 }
 
-export default HomePage
+export default Home

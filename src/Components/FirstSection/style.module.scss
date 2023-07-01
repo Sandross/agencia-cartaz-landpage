@@ -1,0 +1,19 @@
+@import '../../Styles/mixins';
+
+
+.f-container {
+  @include size(100%, 130vh);
+  background-image: url('../../Assets/wrapper1.png');
+  object-fit: contain;
+  background-repeat: round;
+
+  @media(max-width: 1920px) {
+    background-repeat: space;
+    @include size(100%, 100vh);
+  }
+
+  @media(max-width: 1400px) {
+    @include size(100%, 140vh);
+  }
+
+}

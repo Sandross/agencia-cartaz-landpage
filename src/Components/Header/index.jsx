@@ -1,5 +1,10 @@
 import styles from './style.module.scss';
-import logo from '../../Assets/newlogo.svg';
+import logo from '../../Assets/logo.svg';
+import Image from 'next/image';
+import facebook from '../../Assets/face.png';
+import whatsApp from '../../Assets/wpp.png';
+import location from '../../Assets/location.png';
+import instagram from '../../Assets/instagram.png';
 
 const Header = () => {
   return (
@@ -17,7 +22,13 @@ const Header = () => {
           </a>
         </nav>
         <div className={styles['h-container__line-img']}>
-          <img src={logo} alt="logo" />
+          <Image src={logo} alt="logo" />
+        </div>
+        <div className={styles['h-container__line-icons']}>
+          <Image src={facebook} alt="facebook" />
+          <Image src={instagram} alt="instagram" />
+          <Image src={location} alt="location" />
+          <Image src={whatsApp} alt="whatsApp" />
         </div>
       </div>
     </header>

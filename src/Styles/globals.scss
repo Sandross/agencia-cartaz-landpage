@@ -1,10 +1,29 @@
 @import './mixins';
 
+@font-face {
+  font-family: 'biko_black';
+  src: url('../../public/fonts/biko_black.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'biko_bold';
+  src: url('../../public/fonts/biko_bold.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'biko_regular';
+  src: url('../../public/fonts/biko_regular.otf');
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: #f9fafb;
+  font-family: 'biko_bold';
 }
 
 a {
@@ -17,6 +36,7 @@ a {
   padding: 0;
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   width: 8px;
 }
