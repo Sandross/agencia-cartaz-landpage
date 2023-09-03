@@ -2,5 +2,44 @@
 
 .t-container {
   @include size(100vw, 100vh);
+  color: white;
+  @include flexAlignment(column);
+  gap: 50px;
   background-color: #1e1e1e;
+
+  .t-title {
+    @include flexAlignment(column, center, center);
+    gap: 20px;
+    font-size: 1.3rem;
+  }
+
+  .t-container__service {
+    @include flexAlignment;
+    animation: scroll 60s linear infinite;
+  }
+
+  h1 {
+    color: white;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-180px * 8));
+  }
+}
+
+.t-container::before {
+  left: 0;
+  top: 0;
+}
+
+.t-container-service::after {
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
 }

@@ -17,13 +17,14 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0",
     "sass": "^1.63.4",
+    "swiper": "^10.0.4",
     "web-vitals": "^2.1.4"
   },
-"scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-},
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -25,10 +25,10 @@ const Header = () => {
           <Image src={logo} alt="logo" />
         </div>
         <div className={styles['h-container__line-icons']}>
-          <Image src={facebook} alt="facebook" />
-          <Image src={instagram} alt="instagram" />
-          <Image src={location} alt="location" />
-          <Image src={whatsApp} alt="whatsApp" />
+          <Image src={facebook} alt="facebook" className={styles['line-icons__icon']}/>
+          <Image src={instagram} alt="instagram" className={styles['line-icons__icon']} />
+          <Image src={location} alt="location" className={styles['line-icons__icon']} />
+          <Image src={whatsApp} alt="whatsApp" className={styles['line-icons__icon']} />
         </div>
       </div>
     </header>

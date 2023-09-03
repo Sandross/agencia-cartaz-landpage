@@ -1,20 +1,10 @@
- @keyframes scroll {
-   0% {
-     transform: translateX(0);
+ @import '../../Styles/mixins';
+
+ .s-container-line {
+   @include flexAlignment;
+   gap: 40px;
+
+   .s-container-line-card {
+     box-shadow: 15px 15px 25px 0 black;
    }
-
-   100% {
-     transform: translateX(calc(-180px * 12));
-   }
- }
-
- .s-container::before {
-   left: 0;
-   top: 0;
- }
-
- .s-container::after {
-   right: 0;
-   top: 0;
-   transform: rotateZ(180deg);
  }
