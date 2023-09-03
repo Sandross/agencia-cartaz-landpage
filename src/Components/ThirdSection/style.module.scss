@@ -3,8 +3,9 @@
 .t-container {
   @include size(100vw, 100vh);
   color: white;
-  @include flexAlignment(column);
-  gap: 50px;
+  padding-top: 10vh;
+  @include flexAlignment(column, flex-start);
+  gap: 10vh;
   background-color: #1e1e1e;
 
   .t-title {

@@ -14,7 +14,7 @@ const Header = () => {
           <a href="/">
             HOME
           </a>
-          <a href="/">
+          <a href="/services">
             SERVIÇOS
           </a>
           <a href="/">
@@ -25,10 +25,18 @@ const Header = () => {
           <Image src={logo} alt="logo" />
         </div>
         <div className={styles['h-container__line-icons']}>
-          <Image src={facebook} alt="facebook" className={styles['line-icons__icon']}/>
+          <a href={'https://www.facebook.com/samsaid.midia/?locale=pt_BR'}>
+          <Image src={facebook} alt="facebook" className={styles['line-icons__icon']} />
+          </a>
+          <a href={'https://www.instagram.com/agencia.cartaz/'}>
           <Image src={instagram} alt="instagram" className={styles['line-icons__icon']} />
+          </a>
+          <a>
           <Image src={location} alt="location" className={styles['line-icons__icon']} />
+          </a>
+          <a>
           <Image src={whatsApp} alt="whatsApp" className={styles['line-icons__icon']} />
+          </a>
         </div>
       </div>
     </header>
