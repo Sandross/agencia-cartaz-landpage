@@ -115,34 +115,4 @@ export const services = [
     title: 'PLOTAGEMS EM VEÍCULOS',
     image: carrosel7,
   },
-  {
-    id: 8,
-    title: 'SINALIZAÇÕES',
-    image: carrosel8,
-  },
-  {
-    id: 9,
-    title: 'IMPRESSOS',
-    image: carrosel9,
-  },
-  {
-    id: 10,
-    title: 'QUADROS',
-    image: carrosel10,
-  },
-  {
-    id: 12,
-    title: 'RÓTULOS E ETIQUETAS',
-    image: carrosel11,
-  },
-  {
-    id: 13,
-    title: 'PLOTAGENS DECORATIVAS',
-    image: carrosel12,
-  },
-  {
-    id: 14,
-    title: 'PLOTAGENS COMERCIAIS',
-    image: carrosel14,
-  },
 ]

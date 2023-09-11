@@ -31,10 +31,10 @@ const Header = () => {
           <a href={'https://www.instagram.com/agencia.cartaz/'}>
           <Image src={instagram} alt="instagram" className={styles['line-icons__icon']} />
           </a>
-          <a>
+          <a href={'https://goo.gl/maps/U9T5KsWvT16Ji7Ky8'} >
           <Image src={location} alt="location" className={styles['line-icons__icon']} />
           </a>
-          <a>
+          <a href={'https://api.whatsapp.com/send?phone=5531987985591'}>
           <Image src={whatsApp} alt="whatsApp" className={styles['line-icons__icon']} />
           </a>
         </div>

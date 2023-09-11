@@ -7,10 +7,9 @@ const ServiceLine = () => {
     <div className={styles['s-container-line']}>
       {
         services.map((service) => (
-          <div className={styles['s-container-line-card']}>
-            <ServiceCard key={ service.id } title={ service.title } icon={ service.image } />
-          </div>
-            
+          <a className={styles['s-container-line-card']} href={'/services'}>
+              <ServiceCard key={ service.id } title={ service.title } icon={ service.image } />
+          </a>
             ))
       }
     </div>

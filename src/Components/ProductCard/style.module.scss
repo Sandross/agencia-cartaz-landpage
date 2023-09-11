@@ -1,0 +1,56 @@
+@import '../../Styles/mixins';
+
+.pContainer {
+  @include size(100%, fit-content);
+  @include flexAlignment(column);
+  gap: 50px;
+  color: white;
+
+  .imgLeft {
+    @include size(30%);
+    @include flexAlignment(row, flex-start);
+
+    img {
+      @include size(280px, 240px);
+    }
+  }
+
+  .imgRight {
+    @include size(30%);
+    @include flexAlignment(row, flex-end);
+
+    img {
+      @include size(280px, 240px);
+    }
+  }
+
+  .pCard {
+    @include size(70%, 300px);
+    background-color: #121212;
+    @include flexAlignment;
+    padding: 40px;
+    gap: 40px;
+
+
+    .pContent {
+      @include flexAlignment(column);
+      @include size;
+      gap: 30px;
+      text-align: center;
+
+      .pValues {
+        @include flexAlignment(column);
+        gap: 20px;
+        min-width: 70%;
+      }
+    }
+  }
+
+  button {
+    @include size(150px, 50px);
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+  }
+}
